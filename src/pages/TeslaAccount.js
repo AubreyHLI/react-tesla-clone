@@ -7,6 +7,7 @@ import { signOut } from 'firebase/auth';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { auth } from '../firebase';
 
 
 const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
@@ -15,11 +16,11 @@ const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
   const navigate = useNavigate();
 
   const logOut = () => {
-    signOut()
+    signOut(auth)
     .then(() => {
       dispatch(logout());
-      navigate('/');
     })
+    .then(() => navigate('/'))
     .catch((err) => alert(err.message))
   }
 
