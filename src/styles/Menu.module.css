@@ -34,6 +34,7 @@
 
 .hidden {
     right: -280px;
+    /* display: none; */
 }
 
 .closeIcon {

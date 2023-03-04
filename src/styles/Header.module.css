@@ -10,8 +10,8 @@
     padding: 15px 25px 15px;
 }
 
-.header_notSticky {
-    position: static;
+.header_white {
+    background-color: white;
 }
 
 .links {

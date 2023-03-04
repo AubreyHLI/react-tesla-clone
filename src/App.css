@@ -36,3 +36,14 @@ button {
   border-radius: 4px;
   transition: all .3s ease;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: -30px auto 12px;
+}
+.footer span {
+  font-size: 12px;
+  word-spacing: 2px;
+  color: #5c5e62;
+}

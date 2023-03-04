@@ -1,0 +1,65 @@
+.card {
+    display: grid;
+    place-items: center;
+    border-top: 1px solid #d0d1d2;
+    margin: 0 20px;
+    row-gap: 30px;
+}
+@media (min-width: 600px) {
+    .card {
+        margin: 0 40px;
+    }
+}
+
+.imageBox {
+    text-align: center;
+}
+.imageBox > img {
+    object-fit: contain;
+    width: 75%;
+    min-width: 300px;
+}
+  
+.name {
+    font-weight: 500;
+    font-size: 34px;
+    text-transform: capitalize;
+}
+  
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+  
+.buttons > button {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .buttons > button {
+        width: 230px;
+    }
+}
+  
+.more {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #393c41;
+    max-width: 350px;
+    text-align: center;
+}
+  
+.more > span {
+    color: #3e6be2;
+    cursor: pointer;
+}

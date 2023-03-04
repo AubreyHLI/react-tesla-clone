@@ -25,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop>
-        <div className="app" ref={appRef}>
+        <div className="app" id="app" ref={appRef}>
             <Routes>
               <Route path="/" exact element={<Home isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}/>
               <Route path="/teslaaccount" element={<ProtectedRoutes >

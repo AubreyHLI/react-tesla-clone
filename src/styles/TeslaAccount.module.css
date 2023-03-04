@@ -1,1 +1,49 @@
+.account {
+    margin-bottom: 40px;
+}
 
+.account_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 24px;
+}
+
+
+@media (min-width: 600px) {
+    .account_header {
+       flex-direction: row;
+        align-items: flex-end;
+        padding: 40px 60px 30px;
+    }
+}
+
+.accountInfo > h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+  
+.accountNav {
+    display: flex;
+    gap: 16px;
+}
+@media (min-width: 600px) {
+    .accountNav {
+        gap: 20px;
+    }
+}
+
+.accountNav > a {
+    color: #393c41;
+    font-size: 14px;
+}
+  
+.account_content {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}

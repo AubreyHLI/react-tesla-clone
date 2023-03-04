@@ -7,7 +7,7 @@ import Menu from './Menu';
 const Header = ({isMenuOpen, setIsMenuOpen, isSticky}) => {
 
   return (
-    <div className={`${styles.header} ${!isSticky && styles.header_notSticky}`}>
+    <div className={`${styles.header} ${!isSticky && styles.header_white}`}>
         <div>
             <Link to='/'><img alt='' src='/images/tesla-logo.png' className='logoImg' /></Link>
         </div>

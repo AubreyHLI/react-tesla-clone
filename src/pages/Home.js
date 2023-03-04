@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import HeaderBlock from '../components/HeaderBlock'
 
@@ -15,6 +16,9 @@ const Home = ({isMenuOpen, setIsMenuOpen}) => {
       <HeaderBlock imgurl={'/images/model-x.jpg'} title={'Model X'} />
       <HeaderBlock imgurl={'/images/solarpanels.jpg'} title={'Solar and Powerwall'} />
       <HeaderBlock imgurl={'/images/accessories.jpg'} title={'Accessories'} />
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }
