@@ -41,8 +41,8 @@ const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
         </div>
       </div>
       <div className={styles.account_content}>
-        <Card imgSrc='/images/models.png' name='model s' />
-        <Card imgSrc='/images/modelx.png' name='model x' />
+        <Card imgSrc='./react-tesla-clone/images/models.png' name='model s' />
+        <Card imgSrc='./react-tesla-clone/images/modelx.png' name='model x' />
       </div>
     </div>
 

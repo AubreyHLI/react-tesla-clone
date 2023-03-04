@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState }from 'react';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -26,10 +26,8 @@ function App() {
           userId: userAuth.uid,
           userName: userAuth.displayName
         }));
-        console.log('userAuth:', userAuth);
       } else {
         dispatch(logout());
-        console.log('no user')
       }
     })
   }, [dispatch]);
@@ -45,7 +43,7 @@ function App() {
   
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop>
         <div className="app" id="app" ref={appRef}>
             <Routes>
@@ -58,7 +56,7 @@ function App() {
             </Routes>
         </div>
       </ScrollToTop>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

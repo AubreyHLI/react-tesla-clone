@@ -9,7 +9,7 @@ const Header = ({isMenuOpen, setIsMenuOpen, isSticky}) => {
   return (
     <div className={`${styles.header} ${!isSticky && styles.header_white}`}>
         <div>
-            <Link to='/'><img alt='' src='/images/tesla-logo.png' className='logoImg' /></Link>
+            <Link to='/'><img alt='' src='./react-tesla-clone/images/tesla-logo.png' className='logoImg' /></Link>
         </div>
         <div className={`${styles.links} ${styles.middle}`}>
             <Link to='/'><span>Model S</span></Link>
