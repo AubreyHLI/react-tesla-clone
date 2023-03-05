@@ -8,8 +8,8 @@ import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { auth } from '../firebase';
-import modelofs from '../images/models.jpg'
-import modelofx from '../images/modelx.jpg'
+import modelofs from '../images/models.png';
+import modelofx from '../images/modelx.png';
 
 
 const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
