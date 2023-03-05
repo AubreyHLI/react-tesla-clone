@@ -10,7 +10,7 @@ const Home = ({isMenuOpen, setIsMenuOpen}) => {
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} isSticky={true}/> 
 
       {/* HeaderBlocks */}
-      <HeaderBlock imgurl={'./react-tesla-clone/images/modelof3.JPG'} title={'Model 3'} />
+      <HeaderBlock imgurl={'react-tesla-clone/images/modelof3.JPG'} title={'Model 3'} />
       <HeaderBlock imgurl={'./react-tesla-clone/images/model-y.jpg'} title={'Model Y'} />
       <HeaderBlock imgurl={'./react-tesla-clone/images/model-s.jpg'} title={'Model S'} />
       <HeaderBlock imgurl={'./react-tesla-clone/images/model-x.jpg'} title={'Model X'} />
