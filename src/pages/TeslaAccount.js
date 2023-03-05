@@ -8,6 +8,8 @@ import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { auth } from '../firebase';
+import modelofs from '../images/models.jpg'
+import modelofx from '../images/modelx.jpg'
 
 
 const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
@@ -41,8 +43,8 @@ const TeslaAccount = ({isMenuOpen, setIsMenuOpen}) => {
         </div>
       </div>
       <div className={styles.account_content}>
-        <Card imgSrc='./react-tesla-clone/images/models.png' name='model s' />
-        <Card imgSrc='./react-tesla-clone/images/modelx.png' name='model x' />
+        <Card imgSrc={modelofs} name='model s' />
+        <Card imgSrc={modelofx} name='model x' />
       </div>
     </div>
 
