@@ -59,12 +59,12 @@ const Signup = () => {
                 <Input labelText='Email' type='text' inputName='email' inputValue={email} setInputValue={setEmail}/>
                 <Input labelText='Password' type='password' inputName='password' inputValue={password} setInputValue={setPassword}/>
                 <Input labelText='Confirmed password' type='password' inputName='confirmedPW' inputValue={confirmedPW} setInputValue={setConfirmedPW}/>
-                <button type='submit' onClick={signUp} disabled={validateInputs()}>sign up</button>
             </form>
+            <button className={styles.formBtn} onClick={signUp} disabled={validateInputs()}>sign up</button>
             <div className={styles.divider}>
                 <hr /> <span>OR</span> <hr />
             </div>
-            <button className={styles.btn_secondary}onClick={() => navigate('/login')}>log in with existing account</button>
+            <button className={styles.btn_secondary} onClick={() => navigate('/login')}>log in with existing account</button>
         </div>
     </div>
     )

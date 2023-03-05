@@ -8,7 +8,6 @@ const ScrollToTop = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
         // document.querySelector('#app').scrollIntoView(true);
-        console.log('scroll to top');
     }, [location]);
 
     return <>{props.children}</>

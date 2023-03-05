@@ -26,15 +26,15 @@
     flex-direction: column;
 }
 
-.form > button {
+.formBtn {
     margin-top: 20px;
     background-color: #3e6ae1;
     color: white;
 }
-.form > button:hover {
+.formBtn:hover {
     opacity: 0.8;
 }
-.form > button:disabled {
+.formBtn:disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }

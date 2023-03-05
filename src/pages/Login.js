@@ -14,19 +14,32 @@ const Login = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const logIn = (e) => {
+    const logIn = async (e) => {
         e.preventDefault();
-
-        signInWithEmailAndPassword(auth, email, password)
-        .then( userAuth => {
+        console.log('click log in');
+        try{
+            const userAuth = await signInWithEmailAndPassword(auth, email, password);
+            console.log('log in dispatch');
             dispatch(login({
                 email: userAuth.user.email,
                 userId: userAuth.user.uid,
                 userName: userAuth.user.displayName
             }));
             navigate('/teslaaccount');
-        })
-        .catch( err => alert(err.message) );
+        } catch(err) {
+            alert(err.message);
+        }
+
+        // .then( userAuth => {
+        //     console.log('log in dispatch');
+        //     dispatch(login({
+        //         email: userAuth.user.email,
+        //         userId: userAuth.user.uid,
+        //         userName: userAuth.user.displayName
+        //     }));
+            
+        // })
+        // .catch( err => alert(err.message) );
     }
 
     
@@ -47,12 +60,12 @@ const Login = () => {
             <form className={styles.form}>
                 <Input labelText='Email' type='text' inputName='email' inputValue={email} setInputValue={setEmail}/>
                 <Input labelText='Password' type='password' inputName='password' inputValue={password} setInputValue={setPassword}/>
-                <button type='submit' onClick={logIn} disabled={validateInputs()}>log in</button>
             </form>
+            <button className={styles.formBtn} onClick={logIn} disabled={validateInputs()}>log in</button>
             <div className={styles.divider}>
                 <hr /> <span>OR</span> <hr />
             </div>
-            <button className={styles.btn_secondary}onClick={() => navigate('/signup')}>create account</button>
+            <button className={styles.btn_secondary} onClick={() => navigate('/signup')}>create account</button>
         </div>
     </div>
     )
