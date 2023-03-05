@@ -6,6 +6,7 @@ import { auth } from '../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { login } from '../features/userSlice';
+import logo from '../images/tesla-logo.png';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -38,7 +39,7 @@ const Login = () => {
     <div className={styles.login}>
         <div className={styles.header}>
             <div className='login_logo'>
-                <Link to='/'><img alt='' src='react-tesla-clone/images/tesla-logo.png' className='logoImg' /></Link>
+                <Link to='/'><img alt='' src={logo} className='logoImg' /></Link>
             </div>
         </div>
         <div className={styles.content}>

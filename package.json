@@ -1,7 +1,7 @@
 {
   "name": "react-tesla-clone",
   "version": "0.1.0",
-  "homepage": "https://aubreyhli.github.io/react-tesla-clone",
+  "homepage": "https://aubreyhli.github.io/react-tesla-clone/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

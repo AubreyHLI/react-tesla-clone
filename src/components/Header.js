@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/Header.module.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from './Menu';
+import logo from '../images/tesla-logo.png';
 
 const Header = ({isMenuOpen, setIsMenuOpen, isSticky}) => {
 
   return (
     <div className={`${styles.header} ${!isSticky && styles.header_white}`}>
         <div>
-            <Link to='/'><img alt='' src='react-tesla-clone/images/tesla-logo.png' className='logoImg' /></Link>
+            <Link to='/'><img alt='' src={logo} className='logoImg' /></Link>
         </div>
         <div className={`${styles.links} ${styles.middle}`}>
             <Link to='/'><span>Model S</span></Link>
