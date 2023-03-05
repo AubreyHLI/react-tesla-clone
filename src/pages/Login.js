@@ -38,7 +38,7 @@ const Login = () => {
     <div className={styles.login}>
         <div className={styles.header}>
             <div className='login_logo'>
-                <Link to='/'><img alt='' src='/images/tesla-logo.png' className='logoImg' /></Link>
+                <Link to='/'><img alt='' src='react-tesla-clone/images/tesla-logo.png' className='logoImg' /></Link>
             </div>
         </div>
         <div className={styles.content}>
