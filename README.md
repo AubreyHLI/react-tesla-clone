@@ -1,4 +1,4 @@
-# Getting Started with Create React App and Redux
+# React Tesla Clone app
 
 ## Demo(项目网页成品):
 
